@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import {AlertModule} from 'ngx-bootstrap/alert';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
+import {RouterModule, Routes} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -12,10 +13,11 @@ import { AboutComponent } from './about/about.component';
     NavbarComponent,
     AboutComponent
   ],
-  imports: [
-    BrowserModule,
-    AlertModule.forRoot()
-  ],
+    imports: [
+        BrowserModule,
+        AlertModule.forRoot(),
+        RouterModule.forRoot([])
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
