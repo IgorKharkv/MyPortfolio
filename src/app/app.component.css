@@ -1,6 +1,7 @@
 .content {
   grid-area: content;
   background: url("src/assets/ResumeBlankPage.png");
+  position: relative;
 }
 
 .sidebar {

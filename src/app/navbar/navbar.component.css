@@ -1,5 +1,5 @@
 nav ul {
-  margin: 0;
+  margin: -5px;
   padding: 0;
   display: flex;
   justify-content: space-between;

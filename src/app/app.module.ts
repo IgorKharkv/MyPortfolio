@@ -5,18 +5,26 @@ import { AppComponent } from './app.component';
 import {AlertModule} from 'ngx-bootstrap/alert';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
-import {RouterModule, Routes} from '@angular/router';
+import { NavRoutingModule } from './navbar/nav-routing.module';
+import {NavRoutingRoutingModule} from './navbar/nav-routing-routing.module';
+import { EducationComponent } from './education/education.component';
+import { ExperienceComponent } from './experience/experience.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    AboutComponent
+    AboutComponent,
+    EducationComponent,
+    ExperienceComponent
   ],
     imports: [
-        BrowserModule,
-        AlertModule.forRoot(),
-        RouterModule.forRoot([])
+      BrowserModule,
+      AlertModule.forRoot(),
+      NavRoutingModule,
+      NavRoutingRoutingModule,
+      BrowserAnimationsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
